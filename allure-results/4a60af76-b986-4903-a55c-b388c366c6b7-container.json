@@ -1,0 +1,1 @@
+{"uuid":"4a60af76-b986-4903-a55c-b388c366c6b7","name":"com.tsoft.bot.backend.runner.Register","children":["d749e46a-bfc9-40af-8844-c967480e6cf6"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1629315540430,"stop":1629315541086}],"afters":[],"links":[],"start":1629315540415,"stop":1629315543081}

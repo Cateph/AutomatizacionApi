@@ -1,0 +1,9 @@
+<suite name="ESFService" verbose="1" parallel="methods" thread-count="1" data-provider-thread-count="10" >
+    <test name="Factory">
+        <classes>
+            <class name="com.tsoft.bot.backend.base.BaseClass">
+                <parameter name="invocationCount" value="2"/>
+            </class>
+        </classes>
+    </test>
+</suite>

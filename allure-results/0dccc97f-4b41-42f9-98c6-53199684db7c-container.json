@@ -1,0 +1,1 @@
+{"uuid":"0dccc97f-4b41-42f9-98c6-53199684db7c","name":"com.tsoft.bot.backend.POSTRegister","children":["ee42517f-eeb0-4e7d-b24f-fe8405dc48fe"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1629264306224,"stop":1629264307551}],"afters":[],"links":[],"start":1629264306205,"stop":1629264310535}

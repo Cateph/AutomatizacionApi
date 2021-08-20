@@ -1,0 +1,1 @@
+{"uuid":"90af03bb-15ed-4823-8a14-263917f07350","name":"com.tsoft.bot.backend.PruebasApi","children":["bd555a94-de06-43a7-b45e-f44e3b12c60c"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1629260698889,"stop":1629260699787}],"afters":[],"links":[],"start":1629260698865,"stop":1629260701556}

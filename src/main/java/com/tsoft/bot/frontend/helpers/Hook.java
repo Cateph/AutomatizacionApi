@@ -41,7 +41,7 @@ public class Hook extends Listener {
 		onTestStart(scenario.getName());
 	}
 
-	@Before
+
 	public static void setUpWeb(Scenario scenario) throws IOException {
 		generateWord.startUpWord(scenario.getName());
 

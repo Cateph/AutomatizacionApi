@@ -1,20 +1,21 @@
 package com.tsoft.bot.backend.runner;
-import com.tsoft.bot.backend.test.GetResourceTest;
-import com.tsoft.bot.backend.test.CreateUserTest;
-import com.tsoft.bot.backend.test.RegisterUserTest;
-import com.tsoft.bot.backend.test.UpdateUserTest;
-import org.testng.annotations.Factory;
+
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.testng.annotations.Test;
 
-public class RunTest {
+@CucumberOptions(
+		features={"src//main//resources//features"},
+		glue={
+				"com.tsoft.bot.backend.steps"
+		},
+		plugin = {"pretty", "html:target/cucumber"},
+	    tags = {"@Create"},
+		strict =  false,
+		monochrome = true
+	)
 
-    @Test
-    @Factory
-    public Object[] RunTest(){
+@Test
+public class RunTest extends AbstractTestNGCucumberTests{ }
 
-        return new Object[]{
-                new GetResourceTest(), new CreateUserTest(), new RegisterUserTest(), new UpdateUserTest()
-        };
-    }
-
-}

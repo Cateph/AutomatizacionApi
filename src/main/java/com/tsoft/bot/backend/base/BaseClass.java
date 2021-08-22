@@ -18,11 +18,6 @@ public class BaseClass {
     SimpleDateFormat dateformat = new SimpleDateFormat ("yyyy-MM-dd HH:mm:ss");
     protected String datehourtoday = dateformat.format(date.getTime());
 
-    /*private List<HashMap<String, String>> getData() throws Throwable {
-        return ExcelReader.data(ExcelDataBackObjects.EXCEL_DOC, ExcelDataBackObjects.PAGE_NAME);
-    }*/
-
-    @BeforeClass
     public void setup () {
         //this.invocationCount1 = Integer.parseInt(invocationCount);
         //String email = getData().get(this.invocationCount1).get(ExcelDataBackObjects.COLUMN_EMAIL);
@@ -30,15 +25,9 @@ public class BaseClass {
         RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
         mapresgister.put("email","eve.holt@reqres.in");
         mapresgister.put("password", "pistol");
-        map.put("name", "morpheus");
-        map.put("job", "zion resident");
+        //map.put("name", "morpheus");
+       // map.put("job", "zion resident");
 
     }
-    /*
-        @Test(parameters = { "number-of-times" })
-        public void accessPage(int numberOfTimes) {
-            while (numberOfTimes-- > 0) {
-                // access the web page
-            }
-        }*/
+
 }

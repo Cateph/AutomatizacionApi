@@ -7,7 +7,7 @@
 <!--	</listeners>-->
 	<test name="GroupTest">
 		<classes>
-			<class name="com.tsoft.bot.backend.runner.RunPrueba"/>
+			<class name="com.tsoft.bot.backend.runner.RunTest"/>
 		</classes>
 	</test>
 </suite>

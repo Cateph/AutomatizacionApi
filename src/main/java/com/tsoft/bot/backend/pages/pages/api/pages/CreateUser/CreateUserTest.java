@@ -1,29 +1,26 @@
 package com.tsoft.bot.backend.pages.pages.api.pages.CreateUser;
 import com.tsoft.bot.backend.base.BaseClass;
 import com.tsoft.bot.backend.pages.objects.ExcelDataBackObjects;
-import com.tsoft.bot.backend.pages.pages.api.pages.CreateUser.CreateUser;
 import com.tsoft.bot.frontend.utility.ExcelReader;
+import com.tsoft.bot.frontend.utility.GenerateWord;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import org.apache.http.HttpStatus;
 import org.testng.Assert;
-import io.restassured.RestAssured;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static io.restassured.path.json.JsonPath.from;
 import static org.hamcrest.Matchers.equalTo;
 
 public class CreateUserTest extends BaseClass {
 
-    Map<String, Object> map = new HashMap<String, Object>();
-
+    private static GenerateWord generateWord = new GenerateWord();
     private List<HashMap<String, String>> getData() throws Throwable {
-        return ExcelReader.data(ExcelDataBackObjects.EXCEL_DOC, ExcelDataBackObjects.PAGE_NAME);
+        return ExcelReader.data(ExcelDataBackObjects.EXCEL_DOC, ExcelDataBackObjects.PAGE_CREATE);
     }
     public void CreateUser(String urlbody) throws Throwable {
 
@@ -40,10 +37,13 @@ public class CreateUserTest extends BaseClass {
         header.put("Server" , "cloudflare");
         given()
                 .contentType(ContentType.JSON)
+                .filters(new RequestLoggingFilter(), new ResponseLoggingFilter())
                 .body(map)
                 .post("users")
                 .then()
                 .assertThat().headers(header);
+
+      //  generateWord.sendText(mensaje);
     }
     public void ValidateSchema(){
 

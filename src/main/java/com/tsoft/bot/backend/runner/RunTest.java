@@ -10,8 +10,9 @@ import org.testng.annotations.Test;
 		glue={
 				"com.tsoft.bot.backend.steps"
 		},
-		plugin = {"pretty", "html:target/cucumber"},
-	    tags = {"@Create"},
+		//plugin = {"pretty", "html:target/cucumber"},
+		plugin = {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:report/cucumber-report/report.html"},
+	    tags = {"@Create, @Register , @Update, @GetResource"},
 		strict =  false,
 		monochrome = true
 	)

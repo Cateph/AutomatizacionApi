@@ -1,8 +1,8 @@
 package com.tsoft.bot.backend.runner;
-import com.tsoft.bot.backend.test.GetResourceTest;
+import com.tsoft.bot.backend.pages.pages.api.pages.GetResources.GetResourceTest;
 import com.tsoft.bot.backend.pages.pages.api.pages.CreateUser.CreateUserTest;
-import com.tsoft.bot.backend.test.RegisterUserTest;
-import com.tsoft.bot.backend.test.UpdateUserTest;
+import com.tsoft.bot.backend.pages.pages.api.pages.RegisterUser.RegisterUserTest;
+import com.tsoft.bot.backend.pages.pages.api.pages.UpdateUser.UpdateUserTest;
 import org.testng.annotations.Factory;
 import org.testng.annotations.Test;
 

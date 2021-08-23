@@ -45,7 +45,7 @@ public class CreateUserSuccesStep {
 
     @Then("^El estado de la solicitud es SC_CREATED$")
     public void elEstadoDeLaSolicitudEsSC_CREATED() {
-        RestAssured.filters(new RequestLoggingFilter(), new ResponseLoggingFilter());
+
         create.ValidateStatus();
 
     }

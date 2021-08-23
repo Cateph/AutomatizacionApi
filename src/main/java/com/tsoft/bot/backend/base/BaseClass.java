@@ -18,6 +18,7 @@ public class BaseClass {
     SimpleDateFormat dateformat = new SimpleDateFormat ("yyyy-MM-dd HH:mm:ss");
     protected String datehourtoday = dateformat.format(date.getTime());
 
+    @BeforeClass
     public void setup () {
         //this.invocationCount1 = Integer.parseInt(invocationCount);
         //String email = getData().get(this.invocationCount1).get(ExcelDataBackObjects.COLUMN_EMAIL);

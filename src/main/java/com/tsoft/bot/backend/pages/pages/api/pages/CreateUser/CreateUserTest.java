@@ -44,9 +44,6 @@ public class CreateUserTest extends BaseClass {
                 .post("users")
                 .then()
                 .assertThat().headers(header);
-
-
-
     }
     public void ValidateSchema(){
 

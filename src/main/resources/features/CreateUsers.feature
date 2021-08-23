@@ -10,4 +10,4 @@ Feature: Requerimiento POST para Crear Usuario
     Then El estado de la solicitud es SC_CREATED
     Examples:
       | caso_prueba|
-      |           2|
+      |           1|

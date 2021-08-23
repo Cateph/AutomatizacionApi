@@ -1,4 +1,4 @@
-package com.tsoft.bot.backend.pages.pages.api;
+package com.tsoft.bot.backend.pages.pages.api.RegisterUser;
 
 public class Register {
 	private int id;
